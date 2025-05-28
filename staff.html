@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff - Vanquishers' Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a0000;
+      --secondary: #330000;
+      --accent: #ff1a1a;
+      --text-light: #ffcccc;
+      --text-muted: #ff9999;
+      --highlight: #ff4d4d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(to bottom, #330000, #1a0000);
+      color: var(--text-light);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--secondary);
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      color: var(--highlight);
+      text-shadow: 0 0 5px red, 0 0 10px darkred, 0 0 15px red;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .member {
+      background: #1a0000;
+      padding: 1rem 1.2rem;
+      border: 1px solid var(--accent);
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(255, 26, 26, 0.4);
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--secondary);
+      border-top: 2px solid var(--accent);
+      color: var(--text-muted);
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#perks">Giveaways</a>
+      <a href="staff.html">Staff</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Demon Founder</h2>
+      <div class="members">
+        <div class="member">Plqying_</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Demon King</h2>
+      <div class="members">
+        <div class="member">ItzIshida</div>
+        <div class="member">ImakulGG</div>
+        <div class="member">Relqying_</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Guild Master</h2>
+      <div class="members">
+        <div class="member">lustpo</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Guild Receptionist</h2>
+      <div class="members">
+        <div class="member">Neomi</div>
+        <div class="member">T7_</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Vanquishers' Guild. Made by T7_
+  </footer>
+</body>
+</html>

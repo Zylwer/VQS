@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanquishers' Guild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a0000;
+      --secondary: #330000;
+      --accent: #ff1a1a;
+      --text-light: #ffcccc;
+      --text-muted: #ff9999;
+      --highlight: #ff4d4d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(to bottom, #330000, #1a0000);
+      color: var(--text-light);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--secondary);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: linear-gradient(to bottom, #330000, #1a0000);
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      color: var(--highlight);
+      text-shadow: 0 0 5px red, 0 0 10px darkred, 0 0 15px red;
+      animation: flicker 2s infinite;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      5% { opacity: 0.9; }
+      10% { opacity: 0.95; }
+      15% { opacity: 0.85; }
+      20% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+
+    .hero p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-shadow: 0 0 5px #ff6666;
+    }
+
+    .perks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(to bottom, #330000, #1a0000);
+    }
+
+    .card {
+      background: #1a0000;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(255, 26, 26, 0.4);
+      border: 1px solid var(--accent);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .media-links {
+      background: linear-gradient(to bottom, #330000, #1a0000);
+      text-align: center;
+      padding: 3.5rem 1.5rem 7rem;
+    }
+
+    .media-links h3 {
+      color: var(--highlight);
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .media-button {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 0.75rem;
+      background: #1a0000;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 10px var(--accent), 0 0 20px darkred;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: background 0.3s, color 0.3s, transform 0.3s;
+    }
+
+    .media-button:hover {
+      background: var(--accent);
+      color: #1a0000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: var(--secondary);
+      border-top: 2px solid var(--accent);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      position: relative;
+      margin-top: auto;
+    }
+
+    footer .made-by {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 1rem;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="staff.html">Staff</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Vanquishers' Guild</h2>
+    <p>Truly ethereal place for the Minecraft Community.</p>
+  </section>
+
+  <section class="perks" id="perks">
+    <div class="card">
+      <h3>Top-Notch Guild</h3>
+      <p>Join forces with top-tier talent across the globe. Only the best get in.</p>
+    </div>
+    <div class="card">
+      <h3>Giveaways</h3>
+      <p>Participate in regular giveaways, rewards, and surprise events for the community.</p>
+    </div>
+    <div class="card">
+      <h3>Active</h3>
+      <p>Need help or a teammate? Our community has your back, always.</p>
+    </div>
+  </section>
+
+  <section class="perks" id="staff">
+    <div class="card">
+      <h3>Staff Members</h3>
+      <p>Meet the powerful minds behind Vanquishers' Guild. Moderators, admins, and visionaries.</p>
+    </div>
+    <div class="card">
+      <h3>Dedicated Team</h3>
+      <p>Our staff work around the clock to keep the community safe, thriving and also fun.</p>
+    </div>
+    <div class="card">
+      <h3>Event Coordinators</h3>
+      <p>Creators of epic Minecraft events, challenges, and exclusive guild missions.</p>
+    </div>
+  </section>
+
+  <section class="media-links">
+    <h3>Check Us Out!</h3>
+    <a class="media-button" href="https://discord.gg/CVPQ2ZTbYR" target="_blank">Join our Discord</a>
+    <a class="media-button" href="https://www.youtube.com/channel/UCQBaqoDWquN0U1jrwnDXxTQ" target="_blank">Watch on YouTube</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vanquishers' Guild.</p>
+    <div class="made-by">Made by T7_</div>
+  </footer>
+</body>
+</html>
